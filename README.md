@@ -1,16 +1,133 @@
-# React + Vite
+# 💬 RizzChat - Real Time Chat Application
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A full-stack real-time chat application with authentication, instant messaging, and media sharing features.
 
-Currently, two official plugins are available:
+The frontend provides an interactive user experience using React while communicating with the backend through REST APIs and Socket.IO.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## 🔗 Links
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+🌐 Live Demo:  
+https://rizzchat-1304.web.app/
 
-## Expanding the ESLint configuration
+⚙️ Backend Repository:  
+https://github.com/N1n4d0413/RizzChat-BE
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+💻 Frontend Repository:  
+https://github.com/N1n4d0413/RizzChat-FE
+
+---
+
+## 📸 Preview
+
+### Login
+![Login](assets/login.png)
+
+### Signup
+![Signup](assets/signup.png)
+
+### Real-Time Chat
+![Chat](assets/chat.png)
+
+### Snaps / Media Sharing
+![Snaps](assets/snaps.png)
+
+### Account Management
+![Account](assets/account.png)
+
+---
+
+## ✨ Features
+
+- User registration and login
+- Authentication using Firebase Authentication
+- Password reset functionality
+- Account deletion support
+- Real-time messaging using Socket.IO
+- Media sharing through Snaps
+- Responsive user interface
+
+---
+
+## 🏗 Application Flow
+
+```mermaid
+flowchart LR
+
+User[User]
+
+User --> React[React Frontend]
+
+React --> Firebase[Firebase Authentication]
+
+React --> Socket[Socket.IO Client]
+
+React --> API[REST API Requests]
+
+Socket --> Backend[RizzChat Backend]
+
+API --> Backend
+
+Backend --> Cloudinary[Cloudinary Media Storage]
+
+Backend --> MongoDB[(MongoDB Database)]
+```
+
+---
+
+## 🛠 Tech Stack
+
+### Frontend
+
+- React.js
+- Vite
+- JavaScript
+- CSS
+
+### Libraries
+- Socket.IO Client
+
+### Services
+
+- Firebase Hosting
+- Firebase Authentication
+
+---
+
+## ⚙️ Installation & Setup
+
+Clone the repository:
+
+```bash
+git clone https://github.com/N1n4d0413/RizzChat-FE.git
+
+cd RizzChat-FE
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Start development server:
+
+```bash
+npm run dev
+```
+
+---
+
+## 📌 Future Improvements
+
+- Message delivery indicators
+- User profile customization
+- Push notifications
+- Improved chat UI
+
+---
+
+## 👨‍💻 Developer
+
+Developed by [**Ninad Kathe**](https://github.com/N1n4d0413)
